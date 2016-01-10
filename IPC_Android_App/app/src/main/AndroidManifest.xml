@@ -1,0 +1,215 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiuan.it.ipc">
+
+    <uses-permission android:name="com.onevo.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+
+    <!-- 振动器权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 读取设置权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 创建和删除快捷方式权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 杀死进程 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息,wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限,wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 以下是使用wifi访问网络所需的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <application
+        android:name=".IPCameraApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        tools:replace="android:allowBackup"
+        android:theme="@style/AppTheme">
+        <!--连接页-->
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.RtspActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <activity
+            android:name=".ui.GoolinkActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="登录" >
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:label="注册" >
+        </activity>
+        <!-- 快速登录 -->
+        <activity
+            android:name=".ui.DynamicLoginActivity"
+            android:screenOrientation="portrait"
+            android:label="快速登录" >
+        </activity>
+        <!-- 找回密码1 -->
+        <activity
+            android:name=".ui.RetrievePasswordActivity"
+            android:screenOrientation="portrait"
+            android:label="找回密码1" >
+        </activity>
+        <!-- 找回密码2 -->
+        <activity
+            android:name=".ui.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:label="找回密码2" >
+        </activity>
+        <!-- 登录注册 结束-->
+
+
+        <!--我的设备 开始-->
+        <!-- 我的设备 -->
+        <activity
+            android:name=".ui.DeviceActivity"
+            android:screenOrientation="portrait"
+            android:label="我的设备" >
+        </activity>
+        <!-- 添加成员 -->
+        <!-- 关联白盒（二维码选择） -->
+        <activity
+            android:name=".ui.ScanWhiteBoxActivity"
+            android:label="关联白盒1"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 关联白盒（填写） -->
+        <activity
+            android:name=".ui.ScanWhiteActivity"
+            android:label="关联白盒2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 连接设备页面-WiFi SSID(添加白盒) -->
+        <activity
+            android:name=".ui.ConnectWhiteBoxActivity"
+            android:screenOrientation="portrait"
+            android:label="连接设备页面-WiFi SSID(添加白盒)" >
+        </activity>
+        <!-- 设备删除-->
+        <activity
+            android:name=".ui.DeleteDeviceConfirmActivity"
+            android:screenOrientation="portrait"
+            android:label="设备删除" >
+        </activity>
+
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.NoneSetActivity"
+            android:screenOrientation="portrait"
+            android:label="设置" >
+        </activity>
+        <!-- 摄像头主页 -->
+        <activity
+            android:name=".ui.CameraMainActivity"
+            android:screenOrientation="portrait"
+            android:label="摄像头" >
+        </activity>
+
+
+        <!-- 所有图像列表 -->
+        <activity
+            android:name=".ui.ImageListActivity"
+            android:screenOrientation="portrait"
+            android:label="图像列表" >
+        </activity>
+
+        <!-- 分享视频 -->
+        <activity
+            android:name=".ui.ShareVideoActivity"
+            android:screenOrientation="portrait"
+            android:label="分享视频" >
+        </activity>
+
+        <!-- 查看图片-->
+        <activity
+            android:name=".ui.CheckImageActivity"
+            android:screenOrientation="portrait"
+            android:label="查看图片" >
+        </activity>
+
+        <activity
+            android:name=".ui.VideoCutActivity"
+            android:screenOrientation="portrait"
+            android:label="快速预览" />
+        <!-- 所有视频列表 -->
+
+        <activity
+            android:name=".ui.PreviewListActivity"
+            android:screenOrientation="portrait"
+            android:label="视频列表" >
+        </activity>
+
+        <service android:name=".service.BackService" />
+        <service android:name=".service.TimeService" />
+        <service android:name=".service.ConstantlyService" />
+        <meta-data android:value="d1ccb2182c2be94f8ba86d9c4237d4df" android:name="BUG_HD_SDK_GENERAL_KEY" />
+    </application>
+
+</manifest>

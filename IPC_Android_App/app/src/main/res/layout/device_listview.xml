@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_edf2f9">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:tag="back">
+
+        <Button
+            android:id="@+id/device_delete_btn"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/red"
+            android:paddingLeft="20dp"
+            android:text="删除"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:tag="front"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/device_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mysheb_icon_1"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/device_share_compress_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/device_icon"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mysheb_icon_4"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/device_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="热水器" />
+
+        <TextView
+            android:id="@+id/device_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/device_name"
+            android:layout_toRightOf="@id/device_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_aab4c0"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:text="水已经烧好了"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/device_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="上午11:00"
+            android:textSize="12dp"
+            android:textColor="@color/color_afb0b2"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/device_share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/device_agree_btn"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/color_6da4e8"
+            android:text="同意"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/device_ignore_btn"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginRight="55dp"
+            android:background="@color/color_b7bcc2"
+            android:text="忽略"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

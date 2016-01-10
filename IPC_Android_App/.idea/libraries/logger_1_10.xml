@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="logger-1.10">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.orhanobut/logger/1.10/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.orhanobut/logger/1.10/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.orhanobut/logger/1.10/f791dff9e1dea92480d43786757065d6287b03a1/logger-1.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

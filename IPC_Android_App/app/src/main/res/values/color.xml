@@ -1,0 +1,55 @@
+<resources>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="basic">#ffffff</color>
+    <color name="side">#002395</color>
+    <color name="text">#000000</color>
+    <color name="active_bar">#FFA500</color>
+    <color name="bar">#9FA0A0</color>
+    <color name="black">#000000</color>
+    <color name="grey">#BFBFBF</color>
+    <color name="gray">#e5e5e5</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FFA500</color>
+    <color name="red">#FF0000</color>
+    <color name="itemListTitle">#00AEEF</color>
+    <color name="lightblue">#E1F4FD</color>
+    <color name="result">#00BEEF</color>
+    <color name="text10">#E50E65</color>
+    <color name="table2_label2">#00AEEF</color>
+
+    <!--注册圆角背景颜色-->
+    <color name="color_6da4e8">#6DA4E8</color>
+    <color name="color_ebeff2">#EBEFF2</color>
+    <color name="color_b7bcc2">#B7BCC2</color>
+    <color name="color_689cdb">#689CDB</color>
+    <color name="color_5588c8">#5588C8</color>
+    <color name="color_2e5dc5">#2E5DC5</color>
+    <color name="color_e0e0e0">#E0E0E0</color>
+    <color name="color_edf2f9">#EDF2F9</color>
+    <color name="color_d6e5f7">#D6E5F7</color>
+    <color name="color_7e8185">#7E8185</color>
+    <color name="color_d0d7de">#D0D7DE</color>
+    <color name="color_aab4c0">#AAB4C0</color>
+    <color name="color_afb0b2">#AFB0B2</color>
+    <color name="color_0d437b">#0D437B</color>
+    <color name="color_0F3768">#0F3768</color>
+    <color name="color_73DBCD">#73DBCD</color>
+    <color name="color_78C445">#78C445</color>
+
+    <!-- 二维码扫描共通用 -->
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+    <!-- 倒计时 -->
+    <color name="btn_timer_solid">#FBFBFB</color>
+    <color name="btn_timer_stroke">#C2C2C2</color>
+    <color name="btn_timer_pressed">#666666</color>
+</resources>

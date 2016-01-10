@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical">
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_background="@color/black"
+        app:custom_text_color="@color/white"
+        app:custom_title="摄像头ONE"
+        app:custom_left_src="@drawable/icon_white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_real"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+       >
+
+      <ImageView
+          android:id="@+id/image_real"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/icon_real"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_real"
+            android:text="实时图像"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <include
+            layout="@layout/include_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_long_distance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/image_long_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_long_distance"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/text_long_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_long_distance"
+            android:text="远程录像"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_whole_scene"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        >
+        <include
+            layout="@layout/include_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <ImageView
+            android:id="@+id/image_whole_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_whole_scene"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_whole_scene"
+            android:text="全景拍照"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_loading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Loading......"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/image_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_video"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:contentDescription="image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_video"
+            android:text="所有录像"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <include
+            layout="@layout/include_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_image"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:text="所有图片"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@drawable/camera_button_selector"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/image_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_refresh"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_refresh"
+            android:text="检查固件更新"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

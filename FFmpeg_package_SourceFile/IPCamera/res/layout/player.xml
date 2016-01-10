@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="TUTK:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linearLayout1" >
+
+        <Button
+            android:id="@+id/AudioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="音频" />
+
+        <Button
+            android:id="@+id/LightControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="灯开" />
+
+        <Button
+            android:id="@+id/AlarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="警开" />
+
+        <Button
+            android:id="@+id/RecordeControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="录像" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/linearLayout2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/LowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="低质" />
+
+        <Button
+            android:id="@+id/CentreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="中质" />
+
+        <Button
+            android:id="@+id/HighButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高质" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/CameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/live_snap_0" />
+
+        <ImageButton
+            android:id="@+id/RecordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/live_record_0" />
+    </LinearLayout>
+
+  
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/linearLayout5"
+            android:orientation="horizontal"
+              android:layout_above="@id/linearLayout6"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/UpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/up" />
+
+            <ImageButton
+                android:id="@+id/DownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/down" />
+
+            <ImageButton
+                android:id="@+id/LeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/left" />
+
+            <ImageButton
+                android:id="@+id/RightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/right" />
+
+             <ImageButton
+                 android:id="@+id/SpeakButton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:src="@drawable/ic_btn_speak_now" />
+
+        </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout5"
+        android:layout_below="@id/linearLayout3"
+        android:background="#ff000000"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+             <LinearLayout 
+                 android:id="@+id/playLinearLayout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                   android:layout_gravity="center_vertical|center_horizontal"
+                   android:background="@android:color/white">
+             </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+    </style>
+
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:background">#ff20a6e5</item>
+    <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+    <item name="android:backgroundStacked">#ffffffff</item>   <!-- 分离成tab时的tab颜色 -->
+    <item name="android:backgroundSplit">#ff2629ff</item>
+    </style>
+    <style name="AcBar_titleStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>

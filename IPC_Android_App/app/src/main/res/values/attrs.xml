@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomToolbar">
+        <attr name="custom_title" format="string" />
+        <attr name="custom_left_text" format="string" />
+        <attr name="custom_right_text" format="string" />
+        <attr name="custom_left_src" format="reference" />
+        <attr name="custom_right_src" format="reference" />
+        <attr name="custom_text_color" format="reference|color" />
+        <attr name="custom_background" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="custom_src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditGroup">
+        <attr name="android:src" />
+        <attr name="android:inputType"/>
+        <attr name="android:hint"/>
+        <attr name="android:maxLength"/>
+    </declare-styleable>
+
+</resources>

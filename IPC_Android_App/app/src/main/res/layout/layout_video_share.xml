@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/basic">
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_background="@color/black"
+        app:custom_text_color="@color/white"
+        app:custom_left_src="@drawable/icon_white"
+        app:custom_right_text="分享"/>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_heightPercent="40%"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存到本地"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="写下你对朋友说的话..."
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:gravity="top"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@+id/videoView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_heightPercent="30%"
+        android:layout_marginTop="16dp" />
+
+
+</android.support.percent.PercentRelativeLayout>

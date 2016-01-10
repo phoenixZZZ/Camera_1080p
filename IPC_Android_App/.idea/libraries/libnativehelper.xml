@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libnativehelper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/libnativehelper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_background="@color/black"
+        app:custom_text_color="@color/white"
+        app:custom_left_text="取消"/>
+
+
+    <TextView
+        android:id="@+id/text_02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:singleLine="false"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_above="@+id/text_01"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:text="请在“设置-无线网络连接”中选择与设备标签所示同名的无线网络。设置完成后再返回本页面。"
+
+      />
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginRight="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/layout_height"
+        android:singleLine="false"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_above="@+id/setting"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_xlarge"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="144dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:text="设置"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:background="@drawable/item_shape"
+        android:textSize="@dimen/text_size_xxxlarge"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quality">
+        <item>流 畅</item>
+        <item>清 晰 </item>
+        <item>高 清</item>
+    </string-array>
+
+    <string-array name="videoWidth">
+        <item>320</item>
+        <item>640 </item>
+        <item>1920</item>
+    </string-array>
+
+    <string-array name="videoHeight">
+        <item>240</item>
+        <item>480 </item>
+        <item>1080</item>
+    </string-array>
+</resources>

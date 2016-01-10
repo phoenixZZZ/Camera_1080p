@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ui_1_1_1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_background="@color/black"
+        app:custom_text_color="@color/white"
+        app:custom_left_text="取消"/>
+
+    <RelativeLayout
+        android:id="@+id/ui_1_1_1_line_4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Spinner
+            android:id="@+id/ui_1_1_1_search_text"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_shape"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/ui_search_ImageView"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ui_1_1_1_search_text"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_marginLeft="-35dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ui_1_1_1_line_5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ui_1_1_1_line_4">
+
+        <EditText
+            android:id="@+id/ui_1_1_1_wifi_password"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:background="@drawable/item_shape"
+            android:inputType="textPassword"
+            android:hint="@string/warn_message_103"/>
+        <ImageView
+            android:id="@+id/ui_connect_device_password_Clear_ImageView"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ui_1_1_1_wifi_password"
+            android:src="@drawable/denglu2_icon3"
+            android:layout_marginLeft="-35dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ui_1_1_1_connect"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ui_1_1_1_line_5"
+        android:background="@color/black"
+        android:layout_marginTop="15dp"
+        android:text="@string/finish"
+        android:textSize="16dp"
+        android:textColor="@color/basic"/>
+
+    <ProgressBar
+        android:id="@+id/ui_1_1_1_loading"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ui_1_1_1_connect"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle" />
+
+
+</RelativeLayout>

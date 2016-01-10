@@ -1,0 +1,145 @@
+package com.jiuan.it.ipc.ui;
+
+import android.content.Intent;
+import android.net.wifi.WifiManager;
+import android.os.Bundle;
+import android.os.Handler;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.google.gson.JsonElement;
+import com.jiuan.it.ipc.Config;
+import com.jiuan.it.ipc.R;
+import com.jiuan.it.ipc.common.listener.ZNKNetWorkUnavialableListener;
+import com.jiuan.it.ipc.common.util.ZnkActivityUtil;
+import com.jiuan.it.ipc.http.Client;
+import com.jiuan.it.ipc.http.ResponseHandler;
+import com.jiuan.it.ipc.tools.WifiAdmin;
+import com.jiuan.it.ipc.ui.widget.CustomToolbar;
+
+public class ScanWhiteActivity extends BaseActivity implements View.OnClickListener ,
+        CustomToolbar.OnClickCustomToolbarListener{
+
+    private final String TAG_CLASS_NAME = this.getClass().getSimpleName();
+
+    private CustomToolbar toolbar =null;
+
+    private EditText deviceId =null;
+
+    private String whiteBoxId;
+
+    private ImageView barCode =null;
+
+    private int networkId;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // 初期加载画面显示
+        setContentView(R.layout.layout_scan_write);
+
+        toolbar = (CustomToolbar)this.findViewById(R.id.toolbar);
+        deviceId = (EditText)this.findViewById(R.id.edit_id);
+        barCode = (ImageView)this.findViewById(R.id.barcode);
+
+        toolbar.setOnClickCuteToolbarListener(this);
+        barCode.setOnClickListener(this);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onClickLeft() {
+        ZnkActivityUtil.finishActivity();
+    }
+
+    @Override
+    public void onClickRight() {
+        whiteBoxId = deviceId.getText().toString();
+        if(!TextUtils.isEmpty(whiteBoxId)){
+            bindWhiteBox();
+        }else {
+            tipErrorShow("请输入设备ID");
+        }
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.barcode:
+                Intent intent = new Intent(getApplicationContext(),
+                        ScanWhiteBoxActivity.class);
+                startActivity(intent);
+                ZnkActivityUtil.finishActivity();
+                break;
+        }
+    }
+
+    private void bindWhiteBox() {
+        // 调用用户绑定白盒子API
+        Client.requestBindWBoxUser(this, Config.getGlobal(this).getHguid(), Config.getGlobal(this).getToken().getAccessToken(), whiteBoxId,
+                new ResponseHandler() {
+
+                    @Override
+                    public void onInnovationSuccess(JsonElement value) {
+                        super.onInnovationSuccess(value);
+                        // 获取相应结果
+                        Integer response = get(value.toString(), Integer.class);
+                        if (response == 1) {
+                            tipErrorShow("绑定白盒子成功！");
+                            //配置连接白盒
+                            WifiAdmin wifiAdmin = new WifiAdmin(ScanWhiteActivity.this);
+                            if (wifiAdmin.checkState() == WifiManager.WIFI_STATE_DISABLED) {
+                                ZnkActivityUtil.showSimpleDialogAndFinish("提示", "WIFI关闭，无法配置！");
+                                return;
+                            }
+                            networkId = wifiAdmin.getNetworkId();
+                            wifiAdmin.openWifi();
+                            wifiAdmin.addNetwork(wifiAdmin.CreateWifiInfo(whiteBoxId, Config.white_Password, Config.white_Type));
+                            //白盒配置Wifi界面
+                            start.postDelayed(runnable, 0);
+
+                        } else {
+                            ZnkActivityUtil.showSimpleDialog("绑定白盒子失败！");
+                        }
+                        ZnkActivityUtil.finishActivity();
+                    }
+
+                    @Override
+                    public void onZNKFailure(String value) {
+
+                        ZnkActivityUtil.showSimpleDialog("提示", value);
+                    }
+
+                    @Override
+                    public void onZNKTokenFailure(String value) {
+
+                        showTokenFailure(value);
+                    }
+
+                }, new ZNKNetWorkUnavialableListener());
+    }
+
+    /** 白盒配置Wifi界面*/
+    Handler start=new Handler();
+    Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            Intent intent = new Intent(ScanWhiteActivity.this,
+                    ConnectWhiteBoxActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("name", TAG_CLASS_NAME);
+            bundle.putString("whiteBoxId", whiteBoxId);
+            bundle.putInt("networkId", networkId);
+
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
+    };
+}

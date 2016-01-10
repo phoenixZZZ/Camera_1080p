@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <com.jiuan.it.ipc.common.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="top">
+
+       <com.jiuan.it.ipc.ui.widget.CustomToolbar
+           android:id="@+id/toolbar"
+           android:layout_alignParentTop="true"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/toolbar_height"
+           app:custom_background="@color/black"
+           app:custom_text_color="@color/white"
+           app:custom_left_text="取消"/>
+
+       <TextView
+           android:id="@+id/device_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="设备ID"
+           android:padding="8dp"
+           android:gravity="center"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/toolbar"
+           android:layout_marginTop="16dp"
+           android:layout_marginRight="32dp"
+           android:textColor="@color/white"
+           android:background="@drawable/white_shape"
+           android:textSize="18sp"
+           android:textStyle="bold" />
+
+       <View
+           android:id="@+id/view"
+           android:layout_width="wrap_content"
+           android:layout_height="1dp"
+           android:layout_centerInParent="true"
+           android:visibility="invisible"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/scan_white_box"
+           android:gravity="center"
+           android:layout_centerHorizontal="true"
+           android:layout_above="@+id/view"
+           android:layout_marginBottom="108dp"
+           android:singleLine="false"
+           android:textColor="@color/white"
+           android:textSize="18sp"
+           android:textStyle="bold" />
+
+
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

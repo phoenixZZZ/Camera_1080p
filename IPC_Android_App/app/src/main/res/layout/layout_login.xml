@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ui_0"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_right_text="数据传输"
+        app:custom_text_color="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/icon_logo"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true" />
+
+    <com.jiuan.it.ipc.ui.widget.CustomEditGroup
+        android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/user_name_hint"
+        android:inputType="number"
+        android:layout_below="@id/imageView"
+        android:src="@drawable/icon_name"
+        android:maxLength="11"
+        />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/userNameEditText"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <com.jiuan.it.ipc.ui.widget.CustomEditGroup
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:layout_below="@id/userNameEditText"
+        android:src="@drawable/icon_password"
+        android:maxLength="16"
+       />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/loginButton"
+        android:layout_below="@id/passwordEditText"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/login_button_selector"
+        android:layout_centerHorizontal="true"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/regButton"
+        android:background="@drawable/ui_login_regist"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="注册"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:id="@+id/forget_password"
+        android:textColor="@color/bar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_login"
+        android:id="@+id/quick_login"
+        android:textColor="@color/bar"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

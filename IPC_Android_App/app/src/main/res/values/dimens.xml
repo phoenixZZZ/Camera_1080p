@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--toolbar-->
+    <dimen name="toolbar_height">48dp</dimen>
+    <!--smooth top bar-->
+    <dimen name="smooth_top_bar_rect_height">4dp</dimen>
+    <!--button-->
+    <dimen name="button_height">48dp</dimen>
+    <!--text-->
+    <dimen name="text_height">48dp</dimen>
+    <!--edit-->
+    <dimen name="edit_text_height">48dp</dimen>
+    <!--layout-->
+    <dimen name="layout_height">48dp</dimen>
+    <!--item-->
+    <dimen name="item_device_height">144dp</dimen>
+    <dimen name="item_height">48dp</dimen>
+    <dimen name="item_space">12dp</dimen>
+    <dimen name="item_radio">6dp</dimen>
+    <dimen name="btn_width">6dp</dimen>
+    <dimen name="image_width">16dp</dimen>
+</resources>

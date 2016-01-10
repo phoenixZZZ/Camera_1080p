@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bar_02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_led"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="35%"
+        >
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="40%"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_xlarge"
+            android:background="@drawable/btn_shape"
+            android:text="@string/play_fluency"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/photo_selector"/>
+
+    <Button
+        android:id="@+id/btn_microphone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/btn_audio"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/voice_selector"/>
+
+    <Button
+        android:id="@+id/btn_audio"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/btn_photo"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/audio_selector"/>
+
+    <Button
+        android:id="@+id/btn_lock"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/btn_microphone"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/lock_selector"/>
+
+
+</android.support.percent.PercentRelativeLayout>

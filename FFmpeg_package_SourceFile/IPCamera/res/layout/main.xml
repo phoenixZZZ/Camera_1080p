@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/ModeTextView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:text="MODE:"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/ModeSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+             android:layout_gravity="center"
+            android:id="@+id/UIDTextView"
+           android:layout_width="80dp"
+            android:gravity="bottom|right"
+            android:layout_height="wrap_content"
+            android:text="Account:"
+            android:textColor="@android:color/black" />
+
+        <AutoCompleteTextView
+            android:id="@+id/UIDEditText"
+             android:hint="请输入UID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" 
+         android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="bottom|right"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+             android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+         android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="bottom|right"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+             android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" 
+         android:layout_marginTop="80dp">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:padding="20dp"
+            android:text="连接" />
+    </LinearLayout>
+
+</LinearLayout>

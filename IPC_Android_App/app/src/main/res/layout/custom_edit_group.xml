@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_toRightOf="@+id/text_title"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@null"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        />
+
+</merge>

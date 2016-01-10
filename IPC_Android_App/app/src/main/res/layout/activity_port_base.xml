@@ -1,0 +1,70 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@android:color/black"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="100%"
+        />
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_background="@color/black"
+        app:custom_left_src="@drawable/icon_white"
+        app:custom_text_color="@color/white"
+        app:custom_right_text="翻转"
+        />
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textColor="#fff"
+        android:layout_above="@+id/bar"
+        android:text="@string/tip_net_connect"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="345dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scale"
+        android:layout_above="@+id/bar"
+        >
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:splitTrack="false"
+            android:progressDrawable="@drawable/player_setting_bright_progressbar"
+            android:thumb="@drawable/ic_bullet_key_permission"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        app:layout_heightPercent="25%"
+        >
+        <include layout="@layout/include_bar_land"/>
+        <include layout="@layout/include_bar_port"/>
+
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

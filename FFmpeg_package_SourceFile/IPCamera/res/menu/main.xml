@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/setVideoFormat"
+        android:orderInCategory="100"
+        android:title="设置音频格式" />
+    <item
+        android:id="@+id/connect"
+        android:orderInCategory="100"
+        android:title="配置wifi" />
+    <item
+        android:id="@+id/scan"
+        android:orderInCategory="100"
+        android:title="扫描添加UID" />
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="100"
+        android:title="检测更新" />
+    
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiuan.it.ipc.ui.widget.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/delete"
+        android:background="@drawable/btn_click_red_havebackground" >
+        <TextView
+            android:id="@+id/btn_Delete"
+            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_toRightOf="@+id/layout_content"
+            android:text="删除"
+            android:gravity="center|bottom"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/care_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.jiuan.it.ipc.ui.widget.SlidingButtonView>
+
+
+
+

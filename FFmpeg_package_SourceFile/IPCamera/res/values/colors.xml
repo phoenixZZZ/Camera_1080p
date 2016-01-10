@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <color name="solid_black">#ff000000</color>
+    <color name="solid_red">#ff03a7ff</color>
+    <color name="solid_blue">#ff42abff</color>
+    <color name="solid_green">#ff33b5e5</color>
+    <color name="solid_yellow">#ffff6144</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="blues">#ff439cff</color>
+    <!--谷歌蓝色-->
+    <color name="app_theme_color">#ff33b5e5</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#696969</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <color name="gray_light">#ffdbdbdb</color>
+    <color name="gray_lights">#ffefefef</color>
+</resources>

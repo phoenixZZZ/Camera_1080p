@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ui_dynamic_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+
+    <com.jiuan.it.ipc.ui.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:custom_title="@string/quick_login_hint"
+        app:custom_text_color="@color/black"
+        app:custom_left_src="@drawable/icon_left"/>
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.jiuan.it.ipc.ui.widget.CustomTimerButton
+            android:id="@+id/button_timer"
+            android:layout_width="90dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_timer"
+            android:text="获取验证码"/>
+
+        <com.jiuan.it.ipc.ui.widget.CustomEditGroup
+            android:id="@+id/ui_dynamic_login_userName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/button_timer"
+            android:hint="@string/phone_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:src="@drawable/icon_name" />
+
+    </RelativeLayout>
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <com.jiuan.it.ipc.ui.widget.CustomEditGroup
+        android:id="@+id/ui_dynamic_login_sms_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/sms_verification_code_hint"
+        android:inputType="textPassword"
+        android:layout_below="@id/layout"
+        android:src="@drawable/icon_code"
+        android:maxLength="6"
+        />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ui_dynamic_login_sms_verification_code"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/ui_dynamic_login_submit"
+        android:background="@drawable/login_button_selector"
+        android:layout_below="@+id/ui_dynamic_login_sms_verification_code"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

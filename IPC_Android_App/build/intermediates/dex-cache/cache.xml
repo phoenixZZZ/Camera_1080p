@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\im.fir\fir-sdk\1.3.7\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cfda5d835c72941d6633845276136830328b616c">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-1f0d45b1404d6b5bac660a92c7ab85e777fefb3d.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-95bf6ca4a548d0137d46b75d53a706925d63c6e2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\gson-2.3.1-3d67bc6296728dce11d45e3fe02a4d0f0bf336e9.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\IPC_Android_App\innovationlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06d7c610348e6723fa99a7565717d7c8e754190f">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-c03df112f8570ad6d90a15c046815eb2f940a8c1.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\zxing.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\zxing-d92d8be27ef224067a7b83f0c5fcd83e9d51fbe5.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.orhanobut\logger\1.10\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="52723f7afc22f9a07045b861fa08e7f094ed9f66">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-5ee7c6acf6339aa73d0f080225df448042522748.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\isoviewer-1.0-RC-27.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f374d6079dfe0fcabe619a8b18337faefd4d0b0c">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\isoviewer-1.0-RC-27-2ccc50f46339de8a8f806aeee7b4d245c13bb3ea.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\slf4j-log4j12-1.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f7dd2d714d5abb161b4141660ce0d3a7a3e3dd22">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\slf4j-log4j12-1.5.2-4da01826cae49ead8a5299a22a342eef701ecf8f.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\libnativehelper.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc924ab1f50570b9108123a17bfd79d87dbdeebf">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\libnativehelper-cbf6c3fa431a4d251fbc387d5cca15febf07c504.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\commons-net-ftp-2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="50ab0797241117153a458ce33c1c3dd33a470218">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\commons-net-ftp-2.0-0715791384597710f46c31306ec7f0f1938741d1.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\percent\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="928b73afabcd116944e9487771d4121168eac1a4">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-0b603390e88d196efcc13056984c2f8aec82191c.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\libglnkio.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7be4b28ac381d3d9e5dfca745b18e1194331bc46">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\libglnkio-aeef708eae9517df7b6f7b082b45f4912e71d12d.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\ftpserver-core-1.0.6.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2ad1570cd6c0d7ea7ca4d3c26a205e02452f5d7d">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\ftpserver-core-1.0.6-428201104a738ac762f609dd7285f66aafcd7eb8.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\libammsdk-ebb9cb6cc93e08efad4310d7bdac0427db47ae14.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\slf4j-api-1.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e34106d9d126209c508655456857ec903b5636f8">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\slf4j-api-1.5.2-71a428366445f9ddfec57272e918ec8c0026ab9c.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-c0633b18cb6810cafeef3291b0cbc499c50e64aa.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\IPC_Android_App\utillibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0cfe6a13d543429cc3cd544b6693941c0c736302">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-6766b07abffb5cdca140b4cf11d0dc9c47798c7f.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\libavdevice.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ac833d2f544ac3890583e3008dc44deaca91a33c">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\libavdevice-32008b9cd4e1f8eb5b4907c9a040f9f3e02f528b.jar" />
+    </item>
+    <item
+        jar="E:\Program Files\Android-Developer\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\support-annotations-22.2.0-4f9c63f60b7542e2e149d8205e039c15d1c7664d.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\log4j-1.2.14.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="03b254c872b95141751f414e353a25c2ac261b51">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\log4j-1.2.14-08d35dda5e863bc142398981a7cb3a7f0eb3d56a.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\mina-core-2.0.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7fdb2aabfa2c942c2853158864abdebf27dc1003">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\mina-core-2.0.4-06fbd2812db081e6ce26c4322be8ee7c53f01568.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\internal_impl-22.2.0-71bf29ed10262e62330d760895038dfdc6bb7e0f.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\nineoldandroids-library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\nineoldandroids-library-2.4.0-f30993ec773f553de27f7b4ba7e41f6f60c38f40.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-9b48c4465ec332624739bd514ae8498612f42531.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\libglnkrt.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="19c50f53d94cb9851f20ec3eb78416ccf72db47c">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\libglnkrt-ba02764579ccfd68f40200cbe4c4d9871315d7fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.8\77bbfe240e437ecb396d982afa0d3bd4f9090ba7\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\android-async-http-1.4.8-199c8bfc843393b2ac6c3bd4ae913eb7079d4424.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\classes-ae143c759b00e1d94fd942a47e52139b56d3c4a0.jar" />
+    </item>
+    <item
+        jar="E:\Src\Camera_1080p\IPC_Android_App\app\libs\universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="E:\Src\Camera_1080p\IPC_Android_App\app\build\intermediates\pre-dexed\urldev\debug\universal-image-loader-1.9.5-13a29e79e91d4c9b0cd094d3aa2c1e70bdcc4190.jar" />
+    </item>
+
+</items>
